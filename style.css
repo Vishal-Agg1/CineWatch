@@ -1,0 +1,229 @@
+*{
+    box-sizing: border-box;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+body{
+ background-color: #EEEEEE;
+}
+.task {
+    display: flex;
+    justify-content: space-between; /* Align logo, search, and menu options */
+    align-items: center;
+    background-color: #151515; /* Dark background for a professional look */
+    padding: 10px 50px; /* Add padding for better spacing */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Slight shadow for depth */
+}
+
+#name {
+    font-size: 32px; /* Increase logo size */
+    color: #FF6F61; /* Bright accent color for the logo */
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.search input {
+    width: 400px; /* Adjust the width of the search bar */
+    padding: 10px;
+    border-radius: 20px 0 0 20px; /* Rounded corners for a smooth look */
+    border: 2px solid #FF6F61;
+}
+
+.search button {
+    background-color: #FF6F61;
+    border: none;
+    padding: 10px;
+    border-radius: 0 20px 20px 0; /* Rounded corners for smoothness */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search button:hover {
+    background-color: #ff4f3b; /* Slight color change on hover */
+}
+
+.menu a {
+    color: #ffffff;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-left: 20px; /* Space between menu items */
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #FF6F61; /* Hover effect for menu links */
+}
+
+.slider{
+    width: 98vw;
+    height: 60vh;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.images{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: 1s;
+}
+.trending{
+    width: 98vw;
+    height: 60vh;
+    margin-top: 20px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    display: flex;
+    flex-direction: column;
+    background-color:#151515 ;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    width: 100%;
+    height: 20%;
+    color: white;
+}
+.contents{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 300px;
+    position: relative;
+}
+.top{
+    height: 70%;
+    width:70%;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #EEEEEE;
+    overflow: hidden;
+    position: relative;
+    transition: 1s;
+}
+#prev{
+  height: 70px;
+  width: 30px;
+}
+#next{
+    height: 70px;
+    width: 30px;
+}
+.top:hover{
+    transform: scale(1.1);
+}
+.movie{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: 1s;
+    background-color: #EEEEEE;
+}
+.photo{
+    height: 100%;
+    width: 40%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.photo img{
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    height: 100%;
+    width: 60%;
+}
+.data p{
+    font-size: 20px;
+}
+.reviews{
+    width: 98vw;
+    height: 60vh;
+    background-color: white;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.line{
+    font-size: 30px;
+    text-align: center;
+}
+.cards{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#card1{
+    height: 90%;
+    width: 20%;
+    border: 1px solid black;
+}
+#card2{
+    height: 90%;
+    width: 20%;
+    border: 1px solid black;
+}
+#card3{
+    height: 90%;
+    width: 20%;
+    border: 1px solid black;
+}
+footer {
+    background-color: #212121; /* Dark background for a clean look */
+    padding: 30px;
+    text-align: center;
+    color: #ffffff;
+}
+
+footer .signup a {
+    display: inline-block;
+    background-color: #FF6F61;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+footer .signup a:hover {
+    background-color: #ff4f3b; /* Hover effect for signup button */
+}
+
+footer .details ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* Spacing between footer links */
+}
+
+footer .details ul li {
+    font-size: 18px;
+    color: #EEEEEE;
+}
+
+footer .details ul li:hover {
+    color: #FF6F61; /* Hover effect for footer links */
+    cursor: pointer;
+}
